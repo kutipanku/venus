@@ -1,0 +1,6 @@
+mutation listenTwitter($data: ListenTwitterInput!) {
+  terminateAutoReply: listenNotification(data: $data) {
+    message
+    status
+  }
+}

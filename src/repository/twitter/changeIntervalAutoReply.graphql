@@ -1,0 +1,7 @@
+mutation listenTwitter($data: ListenTwitterInput!) {
+  changeIntervalAutoReply: listenNotification(data: $data) {
+    message
+    status
+    cronInterval
+  }
+}

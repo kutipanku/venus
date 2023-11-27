@@ -1,0 +1,8 @@
+query getMentionListenerState {
+  getMentionListenerState {
+    message
+    cronInterval
+    status
+    logs
+  }
+}
