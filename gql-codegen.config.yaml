@@ -1,0 +1,21 @@
+base:
+  defaults:
+    env: development
+    scalar_mapping:
+      'Array': ['Array<unknown>']
+      'Boolean': ['boolean']
+      'String': ['string']
+      'ID': ['string']
+      'Int': ['number']
+      'Int64': ['number']
+      'Float': ['number']
+      'SuperInteger': ['number', 'string']
+      'USuperInteger': ['number', 'string']
+    is_recursive: false
+    is_stale: false
+    is_verbose: false
+  environment:
+    development:
+      server_url: http://localhost:4040/graphql
+      alias:
+        - d

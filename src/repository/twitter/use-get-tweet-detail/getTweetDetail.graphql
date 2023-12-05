@@ -1,0 +1,12 @@
+query getTweetDetail($id: String!) {
+  getTweetDetail(id: $id) {
+    content
+    media
+    profile {
+      name
+      id
+      image
+      description
+    }
+  }
+}
